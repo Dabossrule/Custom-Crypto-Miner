@@ -9,12 +9,12 @@
 #define XMRIG_VERSION_H
 
 #define APP_ID        "xmrig"
-#define APP_NAME      "XMRig"
-#define APP_DESC      "XMRig miner"
-#define APP_VERSION   "6.26.0-mo2"
-#define APP_DOMAIN    "xmrig.com"
-#define APP_SITE      "www.xmrig.com"
-#define APP_COPYRIGHT "Copyright (C) 2016-2026 xmrig.com"
+#define APP_NAME      "Pi Miner"
+#define APP_DESC      "Pi Miner For Mining XMR"
+#define APP_VERSION   "v1.0.0"
+#define APP_DOMAIN    "youtube.com/@Theoistheboss"
+#define APP_SITE      "youtube.com/@Theoistheboss"
+#define APP_COPYRIGHT "Copyright (C) 2026 Theoistheboss"
 #define APP_KIND      "miner"
 
 #define APP_VER_MAJOR  6

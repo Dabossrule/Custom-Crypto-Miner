@@ -77,9 +77,9 @@ static void print_pages(const Config *config)
 #   ifdef XMRIG_ALGO_RANDOMX
 #   ifdef XMRIG_OS_LINUX
     Log::print(GREEN_BOLD(" * ") WHITE_BOLD("%-13s") "%s",
-               "1GB PAGES", (VirtualMemory::isOneGbPagesAvailable() ? (config->rx().isOneGbPages() ? kHugepagesSupported : YELLOW_BOLD("disabled")) : YELLOW_BOLD("unavailable")));
+               "1GB PAGES", (VirtualMemory::isOneGbPagesAvailable() ? (config->rx().isOneGbPages() ? kHugepagesSupported : GREEN_BOLD("disabled")) : GREEM_BOLD("unavailable")));
 #   else
-    Log::print(GREEN_BOLD(" * ") WHITE_BOLD("%-13s") "%s", "1GB PAGES", YELLOW_BOLD("unavailable"));
+    Log::print(GREEN_BOLD(" * ") WHITE_BOLD("%-13s") "%s", "1GB PAGES", GREEN_BOLD("unavailable"));
 #   endif
 #   endif
 }
@@ -90,7 +90,7 @@ static void print_cpu(const Config *)
     const auto info = Cpu::info();
 
     Log::print(GREEN_BOLD(" * ") WHITE_BOLD("%-13s%s (%zu)") " %s %s%sAES%s",
-               "CPU",
+               "PI-5 CORE",
                info->brand(),
                info->packages(),
                ICpuInfo::is64bit()    ? GREEN_BOLD("64-bit") : RED_BOLD("32-bit"),
@@ -128,7 +128,7 @@ static void print_memory(const Config *config)
     const double percent = freeMem > 0 ? ((totalMem - freeMem) / totalMem * 100.0) : 100.0;
 
     Log::print(GREEN_BOLD(" * ") WHITE_BOLD("%-13s") CYAN_BOLD("%.1f/%.1f") CYAN(" GB") BLACK_BOLD(" (%.0f%%)"),
-               "MEMORY",
+               "RAM TANK",
                (totalMem - freeMem) / oneGiB,
                totalMem / oneGiB,
                percent

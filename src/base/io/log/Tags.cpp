@@ -23,7 +23,7 @@
 
 const char *xmrig::Tags::config()
 {
-    static const char *tag = CYAN_BG_BOLD(WHITE_BOLD_S " config  ");
+    static const char *tag = RED_BG_BOLD(BLACK_BOLD_S " config  ");
 
     return tag;
 }
@@ -31,7 +31,7 @@ const char *xmrig::Tags::config()
 
 const char *xmrig::Tags::network()
 {
-    static const char *tag = BLUE_BG_BOLD(WHITE_BOLD_S " net     ");
+    static const char *tag = YELLOW_BG_BOLD(RED_BOLD_S " net     ");
 
     return tag;
 }
@@ -39,7 +39,7 @@ const char *xmrig::Tags::network()
 
 const char* xmrig::Tags::origin()
 {
-    static const char* tag = YELLOW_BG_BOLD(WHITE_BOLD_S " origin  ");
+    static const char* tag = BLUE_BG_BOLD(RED_BOLD_S " origin  ");
 
     return tag;
 }
@@ -47,7 +47,7 @@ const char* xmrig::Tags::origin()
 
 const char *xmrig::Tags::signal()
 {
-    static const char *tag = YELLOW_BG_BOLD(WHITE_BOLD_S " signal  ");
+    static const char *tag = GREEN_BG_BOLD(RED_BOLD_S " signal  ");
 
     return tag;
 }
@@ -56,7 +56,7 @@ const char *xmrig::Tags::signal()
 #ifdef XMRIG_MINER_PROJECT
 const char *xmrig::Tags::cpu()
 {
-    static const char *tag = CYAN_BG_BOLD(WHITE_BOLD_S " cpu     ");
+    static const char *tag = RED_BG_BOLD(BLACK_BOLD " cpu     ");
 
     return tag;
 }
@@ -64,7 +64,7 @@ const char *xmrig::Tags::cpu()
 
 const char *xmrig::Tags::miner()
 {
-    static const char *tag = MAGENTA_BG_BOLD(WHITE_BOLD_S " miner   ");
+    static const char *tag = BLACK_BG_BOLD(RED_BOLD " miner   ");
 
     return tag;
 }
@@ -73,7 +73,7 @@ const char *xmrig::Tags::miner()
 #ifdef XMRIG_ALGO_RANDOMX
 const char *xmrig::Tags::randomx()
 {
-    static const char *tag = BLUE_BG(WHITE_BOLD_S " randomx ") " ";
+    static const char *tag = GREEN_BG(ORANGE_BOLD " randomx ") " ";
 
     return tag;
 }
@@ -83,7 +83,7 @@ const char *xmrig::Tags::randomx()
 #ifdef XMRIG_FEATURE_BENCHMARK
 const char *xmrig::Tags::bench()
 {
-    static const char *tag = GREEN_BG_BOLD(WHITE_BOLD_S " bench   ");
+    static const char *tag = GREEN_BG_BOLD(RED_BOLD " bench   ");
 
     return tag;
 }
@@ -94,7 +94,7 @@ const char *xmrig::Tags::bench()
 #ifdef XMRIG_PROXY_PROJECT
 const char *xmrig::Tags::proxy()
 {
-    static const char *tag = MAGENTA_BG_BOLD(WHITE_BOLD_S " proxy   ");
+    static const char *tag = BLACK_BG_BOLD(RED_BOLD " proxy   ");
 
     return tag;
 }
@@ -104,7 +104,7 @@ const char *xmrig::Tags::proxy()
 #ifdef XMRIG_FEATURE_CUDA
 const char *xmrig::Tags::nvidia()
 {
-    static const char *tag = GREEN_BG_BOLD(WHITE_BOLD_S " nvidia  ");
+    static const char *tag = GREEN_BG_BOLD(RED_BOLD " nvidia  ");
 
     return tag;
 }
@@ -114,7 +114,7 @@ const char *xmrig::Tags::nvidia()
 #ifdef XMRIG_FEATURE_OPENCL
 const char *xmrig::Tags::opencl()
 {
-    static const char *tag = MAGENTA_BG_BOLD(WHITE_BOLD_S " opencl  ");
+    static const char *tag = CYAN_BG_BOLD(RED_BOLD " opencl  ");
 
     return tag;
 }
@@ -124,7 +124,7 @@ const char *xmrig::Tags::opencl()
 #ifdef XMRIG_FEATURE_MO_BENCHMARK
 const char *xmrig::Tags::benchmark()
 {
-    static const char *tag = BRIGHT_BLACK_BG(CYAN_BOLD_S " benchmk ");
+    static const char *tag = BLACK_BG_BOLD(RED_BOLD " benchmk ");
 
     return tag;
 }
@@ -133,7 +133,7 @@ const char *xmrig::Tags::benchmark()
 #ifdef XMRIG_FEATURE_PROFILING
 const char* xmrig::Tags::profiler()
 {
-    static const char* tag = CYAN_BG_BOLD(WHITE_BOLD_S " profile ");
+    static const char* tag = CYAN_BG_BOLD(GREEN_BOLD " profile ");
 
     return tag;
 }
